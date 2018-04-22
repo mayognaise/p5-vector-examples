@@ -9,10 +9,10 @@ function draw() {
   background(240);
   let v0 = createVector(0,0);
 
-  let v1 = createVector(20, 90);
+  let v1 = createVector(mouseX, mouseY);
   drawArrow(v0,v1,'red');
 
-  let v2 = createVector(90, 20);
+  let v2 = createVector(90, 90);
   drawArrow(v0,v2,'blue');
 
   if(amount > 1 || amount < 0){
