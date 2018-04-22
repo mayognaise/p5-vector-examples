@@ -4,12 +4,12 @@ function setup() {
 
 function draw() {
   background(240);
-  let v0 = createVector(0,0);
+  let v0 = createVector(50, 50);
 
-  let v1 = createVector(50, 50);
+  let v1 = createVector(50, 0);
   drawArrow(v0,v1,'red');
 
-  let v2 = createVector(mouseX, mouseY);
+  let v2 = createVector(mouseX-50, mouseY-50);
   drawArrow(v0,v2,'blue');
 
   let angleBetween = v1.angleBetween(v2);

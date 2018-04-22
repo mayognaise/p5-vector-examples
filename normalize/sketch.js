@@ -20,7 +20,7 @@ function draw() {
 // draws arrow between two vectors
 function drawArrow(vec0, vec1, myColor) {
   stroke(myColor);
-  strokeWeight(3);
+  strokeWeight(2);
   fill(myColor);
   push();
   translate(vec0.x, vec0.y);
