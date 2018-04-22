@@ -2,6 +2,9 @@ function setup() {
 	createCanvas(100, 100);
 }
 
+let step = 0.01;
+let amount = 0;
+
 function draw() {
   background(240);
   let v0 = createVector(0,0);
@@ -12,7 +15,10 @@ function draw() {
   let v2 = createVector(90, 20);
   drawArrow(v0,v2,'blue');
 
-  let amount = map(mouseX,0,width,0,1,true);
+  if(amount > 1 || amount < 0){
+    step *= -1;
+  }
+  amount += step;
   let v3 = p5.Vector.lerp(v1, v2, amount);
 
   drawArrow(v0,v3,'purple');
