@@ -1,5 +1,5 @@
 # p5-vector-examples
-- [angleBetween](/p5-vector-examples/anglebetween)
+- [angleBetween](/p5-vector-examples/angleBetween)
 - [cross](/p5-vector-examples/cross)
 - [dist](/p5-vector-examples/dist)
 - [div](/p5-vector-examples/div)
